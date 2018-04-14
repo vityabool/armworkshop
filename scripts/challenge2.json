@@ -34,7 +34,7 @@
   "variables": {
     "vmNsgName": "[concat(parameters('vmName'), '-nsg', variables('studentNumber'))]",
     "studentNumber": "28",
-    "dnsLabelPrefix": "rootconf0904",
+    "dnsLabelPrefix": "[concat(parameters('vmName'), '-pip', variables('studentNumber'))]",
     "ubuntuOSVersion": "16.04.0-LTS",
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
     "imagePublisher": "Canonical",
